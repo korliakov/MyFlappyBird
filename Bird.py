@@ -24,7 +24,10 @@ class Bird:
             self.Vy = -self.dash_v
 
     def draw(self):
-        pygame.draw.circle(self.sc, self.color, (self.x, self.y), self.radius)
+        image = pygame.image.load('Snegir2.png')
+        image = pygame.transform.scale(image, (self.radius * 2, self.radius * 2 ))
+        self.sc.blit(image, (self.x - self.radius, self.y - self.radius))
+        #pygame.draw.circle(self.sc, self.color, (self.x, self.y), self.radius, 1)
 
     def check(self):
         for pipe in self.pipes:

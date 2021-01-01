@@ -10,7 +10,7 @@ RED = (200, 0, 0)
 WIDTH = 700
 HEIGHT = 900
 x_0 = WIDTH // 2
-RADIUS = 20
+RADIUS = 25
 g = 0.6
 FPS = 50
 y_0 = HEIGHT // 2
@@ -25,3 +25,4 @@ Vx = 3
 PIPES_DIST = 200
 
 
+#GRAPHICS
